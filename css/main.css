@@ -188,7 +188,7 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
-  color: #555;
+  color: #333a3e;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -277,14 +277,14 @@ p {
   margin: 0 0 25px 0;
 }
 a {
-  color: #555;
+  color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #999;
   word-wrap: break-word;
 }
 a:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #40baf8;
+  border-bottom-color: #40baf8;
 }
 blockquote {
   margin: 0;
@@ -978,10 +978,11 @@ pre .javascript .function {
 .brand {
   position: relative;
   display: inline-block;
-  padding: 0 40px;
+  padding: 20px 40px;
   color: #fff;
-  background: #222;
+  background: #40baf8;
   border-bottom: none;
+  border-radius: 48%;
 }
 .brand:hover {
   color: #fff;
@@ -1314,7 +1315,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #fff;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1350,7 +1351,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #999;
+  color: #fff;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1424,10 +1425,12 @@ pre .javascript .function {
 .post-button .btn {
   color: #fff;
   font-size: 14px;
-  background: #222;
   border-radius: 0;
   line-height: 2;
   margin: 0 4px 8px 4px;
+  background: #40baf8;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 4px 8px 0 rgba(64,186,248,0.22);
 }
 .post-button .fa-fw {
   width: 1.285714285714286em;
@@ -1467,7 +1470,7 @@ pre .javascript .function {
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #222;
+  color: #40baf8;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1649,8 +1652,8 @@ pre .javascript .function {
   bottom: 0;
   width: 0;
   z-index: 1040;
-  box-shadow: inset 0 2px 6px #000;
-  background: #222;
+  box-shadow: inset 0 2px 6px #9013fe;
+  background: #9013fe;
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
@@ -1799,7 +1802,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd9af;
+  background: #294db4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1875,8 +1878,8 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #999;
-  border-bottom-color: #555;
+  color: #fff;
+  border-bottom-color: #40baf8;
 }
 .post-toc ol a:hover {
   color: #ccc;
@@ -2597,7 +2600,7 @@ pre .javascript .function {
   margin-bottom: 80px;
   padding: 25px;
   box-shadow: 0 0 14px #cacbcb;
-  background: #fff;
+  background: rgba(255,255,255,0.3);
 }
 embed {
   display: block;
