@@ -66,7 +66,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="apply call bind," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -82,18 +82,17 @@
 
 
 
-<meta name="description" content="先说call 和 apply吧：ECMAScript3给Function的原型定义了两个方法，他们是Function.prototype.call 和 Function.prototype.apply. 在实际开发中，特别是在一些函数式风格的代码编写中，call和apply方法尤为有用。 1、call和apply区别其实他们的作用是一样的，只是传递的参数不一样而已。apply： 接受2个参数，第一">
-<meta name="keywords" content="apply call bind">
+<meta name="description" content="写了大大小小不少基于vue的项目，但是基本没用到过组件循环引用的知识。为了查缺补漏，照着官方文档撸一个DEMO：组件之间的循环引用 本人的运行版本为 vue-cli@2.8.1，启用项目后，将以下 js 文件和 vue 文件放置在相应的目录中运行。 main.js1234567import Vue from &apos;vue&apos;import App from &apos;./App&apos;new Vue(&amp;#123;  e">
 <meta property="og:type" content="article">
-<meta property="og:title" content="apply、call及bind的区别">
-<meta property="og:url" content="http://yoursite.com/2017/07/11/apply、call及bind的区别/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2017/12/26/vue.js组件循环引用案例/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="先说call 和 apply吧：ECMAScript3给Function的原型定义了两个方法，他们是Function.prototype.call 和 Function.prototype.apply. 在实际开发中，特别是在一些函数式风格的代码编写中，call和apply方法尤为有用。 1、call和apply区别其实他们的作用是一样的，只是传递的参数不一样而已。apply： 接受2个参数，第一">
+<meta property="og:description" content="写了大大小小不少基于vue的项目，但是基本没用到过组件循环引用的知识。为了查缺补漏，照着官方文档撸一个DEMO：组件之间的循环引用 本人的运行版本为 vue-cli@2.8.1，启用项目后，将以下 js 文件和 vue 文件放置在相应的目录中运行。 main.js1234567import Vue from &apos;vue&apos;import App from &apos;./App&apos;new Vue(&amp;#123;  e">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-11T03:54:37.000Z">
+<meta property="og:updated_time" content="2017-12-26T04:53:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="apply、call及bind的区别">
-<meta name="twitter:description" content="先说call 和 apply吧：ECMAScript3给Function的原型定义了两个方法，他们是Function.prototype.call 和 Function.prototype.apply. 在实际开发中，特别是在一些函数式风格的代码编写中，call和apply方法尤为有用。 1、call和apply区别其实他们的作用是一样的，只是传递的参数不一样而已。apply： 接受2个参数，第一">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="写了大大小小不少基于vue的项目，但是基本没用到过组件循环引用的知识。为了查缺补漏，照着官方文档撸一个DEMO：组件之间的循环引用 本人的运行版本为 vue-cli@2.8.1，启用项目后，将以下 js 文件和 vue 文件放置在相应的目录中运行。 main.js1234567import Vue from &apos;vue&apos;import App from &apos;./App&apos;new Vue(&amp;#123;  e">
 
 
 
@@ -121,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/11/apply、call及bind的区别/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/26/vue.js组件循环引用案例/"/>
 
 
 
 
 
-  <!-- <title> apply、call及bind的区别 | Hexo </title> -->
+  <!-- <title>  | Hexo </title> -->
   <title>17biu的博客</title>
   <style>
   .bg_content {
@@ -390,7 +389,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/11/apply、call及bind的区别/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/26/vue.js组件循环引用案例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="17biu">
@@ -411,7 +410,7 @@
             
             
               
-                apply、call及bind的区别
+                
               
             
           </h1>
@@ -426,8 +425,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T11:46:07+08:00">
-                2017-07-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-26T12:53:27+08:00">
+                2017-12-26
               </time>
             
 
@@ -445,7 +444,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/2017/07/11/apply、call及bind的区别/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/2017/12/26/vue.js组件循环引用案例/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -472,20 +471,17 @@
       
 
       
-        <p>先说call 和 apply吧：<br>ECMAScript3给Function的原型定义了两个方法，他们是Function.prototype.call 和 Function.prototype.apply. 在实际开发中，特别是在一些函数式风格的代码编写中，call和apply方法尤为有用。</p>
-<p>1、call和apply区别<br>其实他们的作用是一样的，只是传递的参数不一样而已。<br>apply： 接受2个参数，第一个参数指定了函数体内this对象的指向，第二个参数为数组或者一个类数组。apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。<br>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">let obj1 = &#123;</div><div class="line">    name: &quot;copyes&quot;,</div><div class="line">    getName: function()&#123;</div><div class="line">        return this.name;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">let obj2 = &#123;</div><div class="line">    name: &apos;Fanchao&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(obj1.getName());  // &quot;copyes&quot;</div><div class="line">console.log(obj1.getName.call(obj2));  // &quot;Fanchao&quot;</div><div class="line">console.log(obj1.getName.apply(obj2));  // &quot;Fanchao&quot;</div><div class="line">function showArgs(a, b, c)&#123;</div><div class="line">    console.log(a,b,c);</div><div class="line">&#125;</div><div class="line"></div><div class="line">showArgs.call(this, 3,4,5);</div><div class="line">showArgs.apply(this, [5,6,7]);</div></pre></td></tr></table></figure></p>
-<p>2、常见的call 和 apply 用法<br>数组之间追加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let arr1 = [12, &apos;foo&apos;, &#123;name: &apos;fanchao&apos;&#125;, -1024];</div><div class="line">let arr2 = [&apos;copyes&apos;, &apos;22&apos;, 1024];</div><div class="line"></div><div class="line">Array.prototype.push.apply(arr1, arr2);</div><div class="line">console.log(arr1);</div><div class="line">// [ 12, &apos;foo&apos;, &#123; name: &apos;fanchao&apos; &#125;, -1024, &apos;copyes&apos;, &apos;22&apos;, 1024 ]</div></pre></td></tr></table></figure></p>
-<p>获取数组中的最大值和最小值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let numbers = [5,665,32,773,77,3,996];</div><div class="line">let maxNum = Math.max.apply(Math, numbers);</div><div class="line">let maxNum2 = Math.min.call(Math, 5,665,32,773,77,3,996);</div><div class="line"></div><div class="line">console.log(maxNum);</div><div class="line">console.log(maxNum2);</div></pre></td></tr></table></figure></p>
-<p>验证是否是数组（前提是toString()方法没有被重写过）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function isArray(obj)&#123;</div><div class="line">    return Object.prototype.toString.call(obj)  === &apos;[object Array]&apos;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(isArray(1));</div><div class="line">console.log(isArray([1,2]));</div></pre></td></tr></table></figure></p>
-<p>类（伪）数组使用数组方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var domNodes = Array.prototype.slice.call(document.getElementsByTagName(&quot;*&quot;));</div></pre></td></tr></table></figure></p>
-<p>3、通过一个面试题去深入理解下apply 和 call<br>定义一个 log 方法，让它可以代理 console.log 方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// 常规做法</div><div class="line">function log(msg)&#123;</div><div class="line">    console.log(msg);</div><div class="line">&#125;</div><div class="line">log(12);</div><div class="line">log(1,2)</div></pre></td></tr></table></figure></p>
-<p>上面能够基本解决打印输出问题，但是下面多参数的时候就gg了。换个更好的方式吧。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function log()&#123;</div><div class="line">    console.log.apply(console, arguments);</div><div class="line">&#125;</div><div class="line">log(12);</div><div class="line">log(1,2)</div></pre></td></tr></table></figure></p>
-<p>接下来是要在每一条打印信息前面都要加上一个特定字符串’fanchao`s’又怎么说呢？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function log()&#123;</div><div class="line"></div><div class="line">    let args = Array.prototype.slice.call(arguments);</div><div class="line">    </div><div class="line">    args.unshift(&apos;(fanchao`s)&apos;);</div><div class="line"></div><div class="line">    console.log.apply(console, args);</div><div class="line">&#125;</div><div class="line">log(12);</div><div class="line">log(1,2)</div></pre></td></tr></table></figure></p>
-<p>4、说完了call和apply，接下来说说bind<br>bind() 方法与 apply 和 call 很相似，也是可以改变函数体内 this 的指向。<br>MDN的解释是：bind()方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入 bind()方法的第一个参数作为 this，传入 bind() 方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。<br>看个栗子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">var func = function()&#123;</div><div class="line">    console.log(this.x);</div><div class="line">    console.log(arguments);</div><div class="line">&#125;</div><div class="line"></div><div class="line"> </div><div class="line">func();  // undefined, &#123;&#125;</div><div class="line">var obj = &#123;</div><div class="line">    x: 2</div><div class="line">&#125;</div><div class="line">var bar = func.bind(obj,1);</div><div class="line"></div><div class="line">bar(); // 2 , &#123;&apos;0&apos;:1&#125;</div><div class="line">一个有意思的事：</div><div class="line"></div><div class="line">var bar = function() &#123;</div><div class="line">    console.log(this.x);</div><div class="line">&#125;</div><div class="line">var foo = &#123;</div><div class="line">    x: 3</div><div class="line">&#125;</div><div class="line">var sed = &#123;</div><div class="line">    x: 4</div><div class="line">&#125;</div><div class="line">var func = bar.bind(foo).bind(sed);</div><div class="line">func(); //3</div><div class="line"></div><div class="line">var fiv = &#123;</div><div class="line">    x: 5</div><div class="line">&#125;</div><div class="line">var func = bar.bind(foo).bind(sed).bind(fiv);</div><div class="line">func(); //3</div></pre></td></tr></table></figure></p>
-<p>在Javascript中，多次 bind() 是无效的。更深层次的原因， bind() 的实现，相当于使用函数在内部包了一个 call / apply ，第二次 bind() 相当于再包住第一次 bind() ,故第二次以后的 bind 是无法生效的。</p>
-<p>5、这三个方法的异同点是什么呢？<br>还是先看个栗子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var obj = &#123;</div><div class="line">x: 81,</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var foo = &#123;</div><div class="line">getX: function() &#123;</div><div class="line">return this.x;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(foo.getX.bind(obj)()); //81</div><div class="line">console.log(foo.getX.call(obj)); //81</div><div class="line">console.log(foo.getX.apply(obj)); //81</div></pre></td></tr></table></figure></p>
-<p>看到bind后面对了一对括号。区别是，当你希望改变上下文环境之后并非立即执行，而是回调执行的时候，使用 bind() 方法。而 apply/call 则会立即执行函数。</p>
-<p>总结<br>apply 、 call 、bind 三者都是用来改变函数的this对象的指向的；<br>apply 、 call 、bind 三者第一个参数都是this要指向的对象，也就是想指定的上下文；<br>apply 、 call 、bind 三者都可以利用后续参数传参；<br>bind是返回对应函数，便于稍后调用；apply、call则是立即调用 。</p>
+        <p>写了大大小小不少基于vue的项目，但是基本没用到过组件循环引用的知识。<br>为了查缺补漏，照着官方文档撸一个DEMO：<a href="https://cn.vuejs.org/v2/guide/components.html#%E7%BB%84%E4%BB%B6%E9%97%B4%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8" target="_blank" rel="external">组件之间的循环引用</a></p>
+<p>本人的运行版本为 vue-cli@2.8.1，启用项目后，将以下 js 文件和 vue 文件放置在相应的目录中运行。</p>
+<h2 id="main-js"><a href="#main-js" class="headerlink" title="main.js"></a>main.js</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></div><div class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span></div><div class="line"><span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app'</span>,</div><div class="line">  template: <span class="string">'&lt;App/&gt;'</span>,</div><div class="line">  components: &#123; App &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>main.js 导入 App 组件，并在 components 中注册 App 组件。</p>
+<h2 id="App-vue"><a href="#App-vue" class="headerlink" title="App.vue"></a>App.vue</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;div id=<span class="string">"app"</span>&gt;</div><div class="line">    &lt;li v-<span class="keyword">for</span>=<span class="string">"folder in folders"</span>&gt;</div><div class="line">      &lt;tree-folder v-bind:folder=<span class="string">"folder"</span>&gt;&lt;/tree-folder&gt;</div><div class="line">    &lt;/li&gt;</div><div class="line">  &lt;<span class="regexp">/div&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>template&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  <span class="keyword">import</span> TreeFolder <span class="keyword">from</span> <span class="string">'./components/tree-folder'</span></div><div class="line">  <span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">    data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> &#123;</div><div class="line">        folders: [</div><div class="line">          &#123;</div><div class="line">            name: <span class="string">'folder1'</span>,</div><div class="line">            children: [&#123;</div><div class="line">              name: <span class="string">'folder1 - folder1'</span>,</div><div class="line">              children: [&#123;</div><div class="line">                name: <span class="string">'folder1 - folder1 - folder1'</span></div><div class="line">              &#125;]</div><div class="line">            &#125;, &#123;</div><div class="line">              name: <span class="string">'folder1 - folder2'</span>,</div><div class="line">              children: [&#123;</div><div class="line">                name: <span class="string">'folder1 - folder2 - folder1'</span></div><div class="line">              &#125;, &#123;</div><div class="line">                name: <span class="string">'folder1 - folder2 - folder2'</span></div><div class="line">              &#125;]</div><div class="line">            &#125;]</div><div class="line">          &#125;,</div><div class="line">          &#123;</div><div class="line">            name: <span class="string">'folder 2'</span>,</div><div class="line">            children: [&#123;</div><div class="line">              name: <span class="string">'folder2 - folder1'</span>,</div><div class="line">              children: [&#123;</div><div class="line">                name: <span class="string">'folder2 - folder1 - folder1'</span></div><div class="line">              &#125;]</div><div class="line">            &#125;, &#123;</div><div class="line">              name: <span class="string">'folder2 - folder2'</span>,</div><div class="line">              children: [&#123;</div><div class="line">                name: <span class="string">'folder2-content1'</span></div><div class="line">              &#125;]</div><div class="line">            &#125;]</div><div class="line">          &#125;,</div><div class="line">          &#123;</div><div class="line">            name: <span class="string">'folder 3'</span>,</div><div class="line">            children: [&#123;</div><div class="line">              name: <span class="string">'folder3 - folder1'</span>,</div><div class="line">              children: [&#123;</div><div class="line">                name: <span class="string">'folder3 - folder1 - folder1'</span></div><div class="line">              &#125;]</div><div class="line">            &#125;, &#123;</div><div class="line">              name: <span class="string">'folder3 - folder2'</span>,</div><div class="line">              children: [&#123;</div><div class="line">                name: <span class="string">'folder3-content1'</span></div><div class="line">              &#125;]</div><div class="line">            &#125;]</div><div class="line">          &#125;</div><div class="line">        ]</div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line">    components: &#123;</div><div class="line">      TreeFolder</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
+<p>App 组件导入 TreeFolder 组件，并在 components 中注册 TreeFolder 组件。</p>
+<h2 id="components-tree-folder-vue"><a href="#components-tree-folder-vue" class="headerlink" title="components/tree-folder.vue"></a>components/tree-folder.vue</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;p&gt;</div><div class="line">    &lt;span&gt;&#123;&#123; folder.name &#125;&#125;&lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">    &lt;tree-folder-contents :children="folder.children"&gt;&lt;/</span>tree-folder-contents&gt;</div><div class="line">  &lt;<span class="regexp">/p&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>template&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  <span class="comment">// 官方文档：「在我们的例子中，将 tree-folder 组件做为切入起点。我们知道制造矛盾的是 tree-folder-contents 子组件，所以我们在 tree-folder 组件的生命周期钩子函数 beforeCreate 中去注册 tree-folder-contents 组件」</span></div><div class="line">  <span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">    props: [<span class="string">'folder'</span>],</div><div class="line">    data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> &#123;&#125;</div><div class="line">    &#125;,</div><div class="line">    beforeCreate: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 官方文档给出的是require</span></div><div class="line">    <span class="comment">// this.$options.components.TreeFolderContents = require('./tree-folder-contents.vue')</span></div><div class="line">    <span class="comment">// 在基于vue-cli@2.8.1按照上面的写法还是会报错</span></div><div class="line">    <span class="comment">// Failed to mount component: template or render function not defined.</span></div><div class="line">    <span class="comment">// 所以我们应该改为基于es6的写法异步加载一个组件如下</span></div><div class="line">      <span class="keyword">this</span>.$options.components.TreeFolderContents = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="string">'./tree-folder-contents.vue'</span>)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
+<p>TreeFolder 组件导入 TreeFolderContents 组件，并在 components 中注册 TreeFolderContents 组件。</p>
+<h2 id="components-tree-folder-contents-vue"><a href="#components-tree-folder-contents-vue" class="headerlink" title="components/tree-folder-contents.vue"></a>components/tree-folder-contents.vue</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;ul&gt;</div><div class="line">    &lt;li v-<span class="keyword">for</span>=<span class="string">"child in children"</span>&gt;</div><div class="line">      &lt;tree-folder v-<span class="keyword">if</span>=<span class="string">"child.children"</span> :folder=<span class="string">"child"</span>&gt;&lt;/tree-folder&gt;</div><div class="line">      &lt;span v-else&gt;&#123;&#123; child.name &#125;&#125;&lt;/span&gt;</div><div class="line">    &lt;/li&gt;</div><div class="line">  &lt;<span class="regexp">/ul&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>template&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  <span class="keyword">import</span> TreeFolder <span class="keyword">from</span> <span class="string">'./tree-folder'</span></div><div class="line">  <span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">    props: [<span class="string">'children'</span>],</div><div class="line">    components: &#123;</div><div class="line">      TreeFolder</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
+<p>TreeFolderContents 组件又导入 TreeFolder 组件，并在 components 中注册 TreeFolder 组件，产生了循环引用。</p>
+<p>参考资料：<br>1、<a href="http://lizhihua.me/2016/12/24/vue/component_circlar-reference/" target="_blank" rel="external">http://lizhihua.me/2016/12/24/vue/component_circlar-reference/</a><br>2、<a href="https://cn.vuejs.org/v2/guide/components.html#%E7%BB%84%E4%BB%B6%E9%97%B4%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8" target="_blank" rel="external">https://cn.vuejs.org/v2/guide/components.html#%E7%BB%84%E4%BB%B6%E9%97%B4%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8</a><br>3、<a href="https://cn.vuejs.org/v2/guide/components.html#%E5%BC%82%E6%AD%A5%E7%BB%84%E4%BB%B6" target="_blank" rel="external">https://cn.vuejs.org/v2/guide/components.html#%E5%BC%82%E6%AD%A5%E7%BB%84%E4%BB%B6</a></p>
 
       
     </div>
@@ -529,12 +525,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/apply-call-bind/" rel="tag"># apply call bind</a>
-          
-        </div>
-      
 
       
         
@@ -544,8 +534,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/29/ESlint-standard/" rel="next" title="ESlint standard">
-                <i class="fa fa-chevron-left"></i> ESlint standard
+              <a href="/2017/07/28/browser/" rel="next" title="浏览器工作原理">
+                <i class="fa fa-chevron-left"></i> 浏览器工作原理
               </a>
             
           </div>
@@ -553,10 +543,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/18/setTimeout/" rel="prev" title="时间延迟函数详解">
-                时间延迟函数详解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -626,8 +612,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/../../../../images/timg.jpeg"
@@ -680,6 +675,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#main-js"><span class="nav-number">1.</span> <span class="nav-text">main.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#App-vue"><span class="nav-number">2.</span> <span class="nav-text">App.vue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#components-tree-folder-vue"><span class="nav-number">3.</span> <span class="nav-text">components/tree-folder.vue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#components-tree-folder-contents-vue"><span class="nav-number">4.</span> <span class="nav-text">components/tree-folder-contents.vue</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
